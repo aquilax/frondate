@@ -6,6 +6,9 @@ import (
 )
 
 func main() {
+	// Session
+	beego.SessionOn = true
+	beego.SessionName = "fd"
+	beego.SessionGCMaxLifetime = 2592000 // 1 month
 	beego.Run()
 }
-
