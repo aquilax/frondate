@@ -1,12 +1,11 @@
 package controllers
 
 import (
-	"github.com/astaxie/beego"
 	"html/template"
 )
 
 type AuthController struct {
-	beego.Controller
+	BaseController
 }
 
 func (c *AuthController) Login() {
